@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRICKET GAME</title>
+    <style>
+      body{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BAT BALL AND STUMP GAME</h1>
+    <div class="all-buttons">
+      <button onclick="
+        let computerchoice=Math.random()*3;
+      let c_choice;
+      if(computerchoice>0 && computerchoice<=1){
+        c_choice='BAT'
+      }else if(computerchoice>1 && computerchoice<=2){
+        c_choice='BALL'
+      }else{
+        c_choice='STUMP'
+      }
+      let result;
+      if(c_choice=='BAT'){
+        result=`IT'S A TIE`
+      }else if(c_choice=='BALL'){
+        result='YOU WON'
+      }else if(c_choice=='STUMP'){
+        result='COMPUTER WON'
+      };
+      document.querySelector('#all').innerText=(`YOUR'E CHOICE IS BAT 
+      COMPUTER CHOICE IS ${c_choice} 
+      ${result}`);">BAT</button>
+      <button onclick="
+      computerchoice=Math.random()*3;
+      if(computerchoice>0 && computerchoice<=1){
+        c_choice='BAT'
+      }else if(computerchoice>1 && computerchoice<=2){
+        c_choice='BALL'
+      }else{
+        c_choice='STUMP'
+      }
+      if(c_choice=='BAT'){
+        result=`COMPUTER WON`
+      }else if(c_choice=='BALL'){
+        result=`ITS'S A TIE`
+      }else if(c_choice=='STUMP'){
+        result='YOU WON'
+      };
+      document.querySelector('#all').innerText=(`YOUR'E CHOICE IS BALL 
+      COMPUTER CHOICE IS ${c_choice} 
+      ${result}`);;">BALL</button>
+      <button onclick="
+      computerchoice=Math.random()*3;
+      if(computerchoice>0 && computerchoice<=1){
+        c_choice='BAT'
+      }else if(computerchoice>1 && computerchoice<=2){
+        c_choice='BALL'
+      }else{
+        c_choice='STUMP'
+      }
+      if(c_choice=='BAT'){
+        result=`YOU WON`
+      }else if(c_choice=='BALL'){
+        result=`COMPUTER WON`
+      }else if(c_choice=='STUMP'){
+        result=`IT'S A TIE`
+      };
+      document.querySelector('#all').innerText=(`YOUR'E CHOICE IS STUMP 
+      COMPUTER CHOICE IS ${c_choice} 
+      ${result}`);;">STUMP</button>
+    </div>
+    <h1 id="all"></h1>
+    <script>
+      
+    </script>
+  </body>
+</html>
